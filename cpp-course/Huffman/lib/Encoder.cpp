@@ -154,7 +154,7 @@ void encoder::set_1(char *array, size_t ind){
 template <typename T>
 char *encoder::to_char_array(T number) {
     size_t size = (sizeof(T) + sizeof(char) - 1)/ sizeof(char);
-    char *ch_ar = new char(size);
+    char *ch_ar = new char[size];
     size_t step = (sizeof(T) - sizeof(char)) * 8;
     for (size_t i = 0; i < size; ++i) {
         ch_ar[i] &= 0;
