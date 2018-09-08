@@ -1,4 +1,4 @@
-#include <algorithm>
+#include<algorithm>
 #include <cassert>
 #include <cstdlib>
 #include <vector>
@@ -59,7 +59,6 @@ namespace {
         for (size_t i = 0; i < size; ++i) {
             if (in[i] != out[i]) {
                 result = false;
-                std::cout << std::endl << i <<' ' << (unsigned int) in[i] << ' ' << (unsigned int) (unsigned char) out[i] <<std::endl;
                 break;
             }
         }
@@ -74,14 +73,6 @@ TEST(correctness, big_random)
     for (size_t i = 0; i < 10; ++i) {
         EXPECT_TRUE(generate(1000));
     }
-}
-
-
-TEST(correctness, photo) {
-    encoder e;
-    e.encode("photo_in.jpg", "photo_out.jpg");
-    decoder d;
-    d.decode("photo_out.jpg", "photo_decode.jpg");
 }
 
 TEST(correctness, buffer) {

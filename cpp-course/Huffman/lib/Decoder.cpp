@@ -85,6 +85,9 @@ void decoder::decode(std::string infile, std::string outfile) {
                 }
                 cur = (check_bit(buffer_in, i++)) ? cur->left_son : cur->right_son;
             }
+            if (old_cur != nullptr) {
+                break;
+            }
             buffer_out[ind_in_buf++] = cur->value;
             if (ind_in_buf == BUFLEN) {
                 fout.write(buffer_out, BUFLEN);
@@ -92,7 +95,7 @@ void decoder::decode(std::string infile, std::string outfile) {
             }
         }
     }
-    /*size_t pos = fin.tellg();
+    size_t pos = fin.tellg();
     fin.seekg(0, std::ios::end);
     if (!fin.eof() && pos != fin.tellg()) {
         delete [] buffer_in;
@@ -101,7 +104,7 @@ void decoder::decode(std::string infile, std::string outfile) {
         fout.close();
         tree->~Node();
         throw DamagedFileException();
-    }*/
+    }
     if (ind_in_buf > 0) {
         fout.write(buffer_out, ind_in_buf);
     }
