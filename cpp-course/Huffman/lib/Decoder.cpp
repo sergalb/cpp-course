@@ -160,7 +160,7 @@ T decoder::to_number(char *array, size_t size) {
     T number = 0;
     size_t step = (sizeof(T) - sizeof(char)) * 8;
     for (size_t i = 0; i < size; ++i) {
-        number |= (unsigned char) array[i] << step;
+        number |= (T)(unsigned char) array[i] << step;
         step -= sizeof(char) * 8;
     }
     return number;
