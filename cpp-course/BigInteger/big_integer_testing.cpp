@@ -42,7 +42,6 @@ TEST(correctness, copy_ctor_real_copy)
     big_integer a = 3;
     big_integer b = a;
     a = 5;
-
     EXPECT_EQ(b, 3);
 }
 
@@ -175,7 +174,7 @@ TEST(correctness, mul)
 {
     big_integer a = 5;
     big_integer b = 20;
-
+    big_integer c = a * b;
     EXPECT_TRUE(a * b == 100);
 
     a *= b;
@@ -453,10 +452,10 @@ TEST(correctness, shr_return_value)
 
 TEST(correctness, add_long)
 {
+
     big_integer a("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
     big_integer b(                                                     "100000000000000000000000000000000000000");
     big_integer c("10000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000");
-
     EXPECT_EQ(a + b, c);
 }
 
@@ -493,7 +492,6 @@ TEST(correctness, sub_long)
     big_integer a("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
     big_integer b(                                                     "100000000000000000000000000000000000000");
     big_integer c( "9999999999999999999999999999999999999999999999999999900000000000000000000000000000000000000");
-
     EXPECT_EQ(a - b, c);
 }
 
@@ -531,7 +529,6 @@ TEST(correctness, mul_long_pow2)
     big_integer a("18446744073709551616");
     big_integer b("340282366920938463463374607431768211456");
     big_integer c("115792089237316195423570985008687907853269984665640564039457584007913129639936");
-
     EXPECT_EQ(a * a, b);
     EXPECT_EQ(b * b, c);
 }
@@ -541,7 +538,8 @@ TEST(correctness, div_long)
     big_integer a("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
     big_integer b(                                                     "100000000000000000000000000000000000000");
     big_integer c("100000000000000000000000000000000000000000000000000000");
-
+    using namespace std;
+    big_integer d = a/b ;
     EXPECT_EQ(a / b, c);
 }
 

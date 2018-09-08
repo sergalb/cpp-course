@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="Huffman" targetName="Huffman" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73f0b1c3-302c-41d5-9220-fcf27028cd26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/.idea/BigInteger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/.idea/BigInteger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/07 0 53.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/big_integer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/big_integer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/big_integer.h" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/big_integer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/big_integer_testing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/big_integer_testing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/BigInteger.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/BigInteger.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/big_integer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/BigInteger.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/big_integer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer.h.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/BigIntegerOld.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/big_integer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/gtest/gtest-all.cc.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.cpp.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/big_integer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/big_integer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/big_integer1.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/big_integer_testing.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/big_integer_testing.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/gtest/gtest_main.cc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/gtest/gtest_main.cc.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/big_integer_testing.dir/stP1kAlM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/BigIntegerOld.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/CMakeFiles/main.cpp.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/big_integer.h.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/big_integer.h.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/big_integer_testing.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/big_integer_testing.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/BigInteger.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/BigInteger.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/3.9.6/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.cpp.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/big_integer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/big_integer_testing.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/gtest/gtest-all.cc.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/gtest/gtest_main.cc.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/big_integer_testing.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/big_integer_testing.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/big_integer_testing.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/cmake-build-release/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/cmake-build-release/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/gtest/gtest-all.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/gtest/gtest-all.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/gtest/gtest.h" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/gtest/gtest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/gtest/gtest_main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/gtest/gtest_main.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../BigInteger/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BigInteger/myCMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sas.txt" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-release/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="2143932475">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.35" value="3" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Makefile" value="1" />
+          <entry key="cpp" value="13065" />
+          <entry key="h" value="2390" />
+          <entry key="mm" value="368" />
+          <entry key="txt" value="1080" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="52" />
+          <entry key="ObjectiveC" value="15823" />
+          <entry key="PLAIN_TEXT" value="1029" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.cidr.testingFrameworks.usages">
+        <counts>
+          <entry key="Google Test" value="46" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="All (disassembly)" value="5" />
+          <entry key="Huffman (disassembly)" value="22" />
+          <entry key="Makefile" value="1" />
+          <entry key="cc" value="3" />
+          <entry key="cmake" value="2" />
+          <entry key="cpp" value="17" />
+          <entry key="h" value="15" />
+          <entry key="hello_world (disassembly)" value="1" />
+          <entry key="hpp" value="1" />
+          <entry key="jpg" value="3" />
+          <entry key="txt" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="5" />
+          <entry key="Disassembly" value="28" />
+          <entry key="Image" value="3" />
+          <entry key="ObjectiveC" value="36" />
+          <entry key="PLAIN_TEXT" value="39" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1665691525">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="1" />
+          <entry key="h" value="1" />
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="129" />
+          <entry key="h" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="154" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.cidr.testingFrameworks.usages">
+        <counts>
+          <entry key="Google Test" value="19" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Decoder.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552449">
+              <caret line="32497" column="309" lean-forward="true" selection-start-line="32497" selection-start-column="309" selection-end-line="32497" selection-end-column="309" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Encoder.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/huffman_testing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1139">
+              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/library.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/library.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding>
+                <element signature="e#53#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gtest/gtest.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125987">
+              <caret line="7411" selection-start-line="7411" selection-end-line="7411" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>input.txt</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/input.txt" />
+        <option value="$PROJECT_DIR$/lib/Encoder.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+        <option value="$PROJECT_DIR$/lib/Decoder.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/decode.txt" />
+        <option value="$PROJECT_DIR$/lib/library.cpp" />
+        <option value="$PROJECT_DIR$/../BigInteger/big_integer_testing.cpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/input.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/output.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/test.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/lib/Encoder.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/lib/Decoder.cpp" />
+        <option value="$PROJECT_DIR$/huffman_testing.cpp" />
+        <option value="$PROJECT_DIR$/lib/library.h" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Huffman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Huffman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Huffman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-release" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Huffman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
+              <item name="gtest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Huffman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Non-Source Files'; set:Project Non-Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$NonSourceFilesScope">
+          <expand>
+            <path>
+              <item name="Huffman" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BigInteger" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergey\Desktop\Huffman\cmake-build-debug" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergey\Desktop\Huffman\cmake-build-release" />
+      <recent name="C:\Users\Sergey\Desktop\Huffman" />
+      <recent name="C:\Users\Sergey\Desktop\Huffman\cmake-build-debug" />
+      <recent name="C:\Users\Sergey\Desktop\Huffman\lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Google Test.correctness.All">
+    <configuration name="correctness.All" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Huffman" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Huffman" RUN_TARGET_NAME="Huffman" TEST_CLASS="correctness" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="correctness.hello_world" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Huffman" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Huffman" RUN_TARGET_NAME="Huffman" TEST_CLASS="correctness" TEST_METHOD="hello_world" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Huffman" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Huffman" TARGET_NAME="Huffman" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Huffman" RUN_TARGET_NAME="Huffman">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.Huffman" />
+      <item itemvalue="Google Test.correctness.All" />
+      <item itemvalue="Google Test.correctness.hello_world" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.correctness.All" />
+        <item itemvalue="Google Test.correctness.hello_world" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73f0b1c3-302c-41d5-9220-fcf27028cd26" name="Default Changelist" comment="" />
+      <created>1534873448651</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534873448651</updated>
+      <workItem from="1534873485904" duration="32315000" />
+      <workItem from="1535118381991" duration="14563000" />
+      <workItem from="1535204912833" duration="6802000" />
+      <workItem from="1535374228174" duration="15915000" />
+      <workItem from="1535460995834" duration="6435000" />
+      <workItem from="1535888148669" duration="8883000" />
+      <workItem from="1536092714298" duration="34073000" />
+      <workItem from="1536344760196" duration="978000" />
+      <workItem from="1536346569838" duration="13025000" />
+      <workItem from="1536362847503" duration="144000" />
+      <workItem from="1536364576698" duration="1655000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 15m 09s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 16m 12s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 17m 27s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 18m 24s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 19m 08s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 19m 38s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 19m 59s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 20m 42s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_hello_world - 2018.09.08 at 03h 20m 59s.xml">
+      <configuration name="correctness.hello_world" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correctness_All - 2018.09.08 at 03h 22m 43s.xml">
+      <configuration name="correctness.All" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="134788000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27919462" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32765958" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32765958" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/lib/Encoder.h</url>
+          <line>25</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>17</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>29</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/lib/Decoder.cpp</url>
+          <line>96</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>count_bit</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>codes</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>round</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>count_symbols</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tree</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fin</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>alp</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>5*4+22*5</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>5*4</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(char) -1</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fin.tellg()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>'b'</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>'a'</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((char) -80) &gt;&gt; 6</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sizeof(char) * 8 - 1 - ind % (sizeof(char) * 8))</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>array[ind / (sizeof(char) * 8)]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/big_in.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/big_out.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/ticket.txt" />
+    <entry file="file://$PROJECT_DIR$/lib/Encoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#637#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cpp-course-master/cpp-course/BigInteger/vector.h" />
+    <entry file="file://$PROJECT_DIR$/../cpp-course-master/cpp-course/BigInteger/vector.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/input.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/otput.txt" />
+    <entry file="file://$PROJECT_DIR$/lib/Decoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="e#302#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/bits/stl_bvector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10489">
+          <caret line="617" selection-start-line="617" selection-end-line="617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BigInteger/big_integer_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gtest/gtest_main.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/ne_szimat!.jpg" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/big_in.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/photo_in.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gtest/gtest-all.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98583">
+          <caret line="5799" selection-start-line="5799" selection-end-line="5799" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-release/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125987">
+          <caret line="7411" selection-start-line="7411" selection-end-line="7411" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552449">
+          <caret line="32497" column="309" lean-forward="true" selection-start-line="32497" selection-start-column="309" selection-end-line="32497" selection-end-column="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/library.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#53#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/library.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/decode.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Encoder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Decoder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/huffman_testing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

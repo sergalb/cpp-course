@@ -7,7 +7,9 @@
 #include <stdint-gcc.h>
 #include <vector>
 #include <string>
+#include "vector.h"
 
+//typedef ui_vector vector;
 struct big_integer {
 
     big_integer();
@@ -72,16 +74,16 @@ struct big_integer {
 
 
 private:
-    std::vector<uint32_t> vec;
+    vector<uint_fast32_t> vec;
     void del_useless_zero();
     friend big_integer div_m_in_n(big_integer dividend, big_integer divider);
-    friend big_integer div_m_in_1(big_integer &dividend, uint32_t divider, bool sign, uint32_t shift);
+    friend big_integer div_m_in_1(big_integer &dividend, uint_fast32_t divider, bool sign, uint_fast32_t shift);
     friend unsigned int normalize(big_integer &dividend, big_integer &divider);
     friend void extend(big_integer &b_i, uint64_t to_size);
 
     friend big_integer abs(big_integer &arg);
     friend big_integer &
-    bit_operation(big_integer &a, big_integer const &b, void (*operation)(uint32_t &a, uint32_t const b));
+    bit_operation(big_integer &a, big_integer const &b, void (*operation)(uint_fast32_t &a, uint_fast32_t const b));
 };
 
 big_integer operator+(big_integer a, big_integer const &b);
@@ -92,9 +94,9 @@ big_integer operator%(big_integer a, big_integer const &b);
 big_integer operator&(big_integer a, big_integer const &b);
 big_integer operator|(big_integer a, big_integer const &b);
 big_integer operator^(big_integer a, big_integer const &b);
-big_integer operator&(big_integer a, uint32_t b);
-big_integer operator|(big_integer a, uint32_t b);
-big_integer operator^(big_integer a, uint32_t b);
+big_integer operator&(big_integer a, uint_fast32_t b);
+big_integer operator|(big_integer a, uint_fast32_t b);
+big_integer operator^(big_integer a, uint_fast32_t b);
 big_integer operator<<(big_integer a, unsigned int b);
 big_integer operator>>(big_integer a, unsigned int b);
 bool operator==(big_integer const &a, big_integer const &b);
@@ -109,20 +111,20 @@ std::ostream &operator<<(std::ostream &s, big_integer const &a);
 
 void multiply_string(std::string &str, int carry);
 void divide_string(std::string &str);
-uint32_t right_half(uint64_t arg);
-uint32_t left_half(uint64_t arg);
-uint32_t div_3_in_2(uint32_t dividend1, uint32_t dividend2, uint32_t dividend3, uint32_t divider1,
-                    uint32_t divider2);
-std::pair<uint32_t, uint32_t>
-div_2_in_1(uint32_t dividend1, uint32_t dividend2, uint32_t divider);
-uint64_t link(uint32_t first, uint32_t second);
-uint32_t inline normalize(big_integer &dividend, big_integer &divider);
-uint32_t inline normalize(big_integer &dividend, uint32_t &divider);
+uint_fast32_t right_half(uint64_t arg);
+uint_fast32_t left_half(uint64_t arg);
+uint_fast32_t div_3_in_2(uint_fast32_t dividend1, uint_fast32_t dividend2, uint_fast32_t dividend3, uint_fast32_t divider1,
+                    uint_fast32_t divider2);
+std::pair<uint_fast32_t, uint_fast32_t>
+div_2_in_1(uint_fast32_t dividend1, uint_fast32_t dividend2, uint_fast32_t divider);
+uint64_t link(uint_fast32_t first, uint_fast32_t second);
+uint_fast32_t inline normalize(big_integer &dividend, big_integer &divider);
+uint_fast32_t inline normalize(big_integer &dividend, uint_fast32_t &divider);
 void inline extend(big_integer &b_i, uint64_t to_size);
-big_integer &bit_operation(big_integer &a, big_integer const &b, void (*operation)(uint32_t &a, uint32_t const b));
-void or_(uint32_t &a, uint32_t const b);
-void and_(uint32_t &a, uint32_t const b);
-void xor_(uint32_t &a, uint32_t const b);
+big_integer &bit_operation(big_integer &a, big_integer const &b, void (*operation)(uint_fast32_t &a, uint_fast32_t const b));
+void or_(uint_fast32_t &a, uint_fast32_t const b);
+void and_(uint_fast32_t &a, uint_fast32_t const b);
+void xor_(uint_fast32_t &a, uint_fast32_t const b);
 
 #endif // BIG_INTEGER_H
 

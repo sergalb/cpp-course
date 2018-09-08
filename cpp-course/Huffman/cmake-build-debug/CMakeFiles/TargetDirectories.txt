@@ -1,0 +1,3 @@
+C:/!Git/cpp-course/cpp-course/Huffman/cmake-build-debug/CMakeFiles/Huffman.dir
+C:/!Git/cpp-course/cpp-course/Huffman/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/!Git/cpp-course/cpp-course/Huffman/cmake-build-debug/CMakeFiles/rebuild_cache.dir

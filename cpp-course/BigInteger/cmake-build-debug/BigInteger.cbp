@@ -24,7 +24,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Sergey/Desktop/BigInteger"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/backward"/>
@@ -46,7 +45,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Sergey/Desktop/BigInteger"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.2.0/include/c++/backward"/>
@@ -98,6 +96,12 @@
 			<Option target="big_integer_testing"/>
 		</Unit>
 		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/gtest/gtest_main.cc">
+			<Option target="big_integer_testing"/>
+		</Unit>
+		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/vector.h">
+			<Option target="big_integer_testing"/>
+		</Unit>
+		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/vector.hpp">
 			<Option target="big_integer_testing"/>
 		</Unit>
 		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/CMakeLists.txt">

@@ -98,6 +98,12 @@
 		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/gtest/gtest_main.cc">
 			<Option target="big_integer_testing"/>
 		</Unit>
+		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/vector.h">
+			<Option target="big_integer_testing"/>
+		</Unit>
+		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/vector.hpp">
+			<Option target="big_integer_testing"/>
+		</Unit>
 		<Unit filename="C:/Users/Sergey/Desktop/BigInteger/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
