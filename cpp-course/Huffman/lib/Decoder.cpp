@@ -63,7 +63,7 @@ void decoder::decode(std::string infile, std::string outfile) {
             delete [] buffer_out;
             fin.close();
             fout.close();
-            tree->~Node();
+            delete tree;
             throw DamagedFileException();
         }
         fin.read(buffer_in, BUFLEN);
@@ -102,7 +102,7 @@ void decoder::decode(std::string infile, std::string outfile) {
         delete [] buffer_out;
         fin.close();
         fout.close();
-        tree->~Node();
+        delete tree;
         throw DamagedFileException();
     }
     if (ind_in_buf > 0) {
@@ -112,7 +112,7 @@ void decoder::decode(std::string infile, std::string outfile) {
     delete [] buffer_out;
     fin.close();
     fout.close();
-    tree->~Node();
+    delete tree;
 
 }
 
@@ -145,14 +145,15 @@ void decoder::dfs(Node *cur) {
         dfs(cur->left_son);
         dfs(cur->right_son);
     } else {
-        char* ch = new char[1];
-        fin.read(ch, 1);
-        cur->value = static_cast<unsigned char>(*ch);
+        char ch;
+        fin.read(&ch, 1);
+        cur->value = static_cast<unsigned char>(ch);
+
     }
 }
 
 bool decoder::check_bit(char *array, size_t ind) {
-    return (array[ind / (sizeof(char) * 8)] >> (sizeof(char) * 8 - 1 - ind % (sizeof(char) * 8))) & 1;
+    return static_cast<bool>((array[ind / (sizeof(char) * 8)] >> (sizeof(char) * 8 - 1 - ind % (sizeof(char) * 8))) & 1);
 }
 
 template<typename T>

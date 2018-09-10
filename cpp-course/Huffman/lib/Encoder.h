@@ -21,7 +21,7 @@ private:
     void set_1(char *array, size_t ind);
     void set_0(char *array, size_t ind);
     template <typename T>
-    char* to_char_array(T number);
+    std::vector<char> to_char_array(T number);
 private:
     uint64_t alp[ALPSIZE] = {};
     uint16_t count_symbols;

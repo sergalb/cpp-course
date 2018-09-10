@@ -13,7 +13,7 @@ void encoder::encode(std::string in_file, std::string outfile) {
         throw OpenFileException(OpenFileException::type_e::Outfile);
     }
     set_alp();
-    fout.write(to_char_array(count_symbols), sizeof(count_symbols));
+    fout.write(&to_char_array(count_symbols)[0], sizeof(count_symbols));
     if (count_symbols == 0) {
         fin.close();
         fout.close();
@@ -26,7 +26,7 @@ void encoder::encode(std::string in_file, std::string outfile) {
     uint16_t zero = 0;
     dfs(tree, tmp_code, zero);
     uint64_t count = count_bit();
-    fout.write(to_char_array(count), sizeof(count));
+    fout.write(&to_char_array(count)[0], sizeof(count));
     fout.write(&round[0], sizeof(char) * round.size());
     fout.write(&order[0], sizeof(char) * order.size());
     fin.clear();
@@ -55,7 +55,7 @@ void encoder::encode(std::string in_file, std::string outfile) {
     delete [] buffer_out;
     fin.close();
     fout.close();
-    tree->~Node();
+    delete tree;
 }
 
 size_t encoder::write_to_buffer(std::vector<bool> const &code, size_t code_start, char *buffer, size_t &ind, const size_t BIT_SIZE) {
@@ -105,12 +105,12 @@ void encoder::create_tree() {
         tree->right_son = fake;
         return;
     }
-    ///опасная second_ar.size() -1
     while (first_ind < first_ar.size() || second_ind < second_ar.size() - 1) {
         Node *left_son = (first_ind < first_ar.size() && (second_ind >= second_ar.size() ||
                                                           first_ar[first_ind]->weight <= second_ar[second_ind]->weight))
                          ? first_ar[first_ind++] : second_ar[second_ind++];
         Node *right_son = (first_ind < first_ar.size() && (second_ind >= second_ar.size() ||
+
                                                            first_ar[first_ind]->weight <= second_ar[second_ind]->weight))
                           ? first_ar[first_ind++] : second_ar[second_ind++];
         Node *dad = new Node(left_son->weight + right_son->weight, *left_son, *right_son);
@@ -152,9 +152,9 @@ void encoder::set_1(char *array, size_t ind){
 }
 
 template <typename T>
-char *encoder::to_char_array(T number) {
+std::vector<char> encoder::to_char_array(T number) {
     size_t size = (sizeof(T) + sizeof(char) - 1)/ sizeof(char);
-    char *ch_ar = new char[size];
+    std::vector<char> ch_ar(size);
     size_t step = (sizeof(T) - sizeof(char)) * 8;
     for (size_t i = 0; i < size; ++i) {
         ch_ar[i] &= 0;

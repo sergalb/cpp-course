@@ -20,7 +20,7 @@ struct Node {
     Node* left_son;
     Node* right_son;
     Node* dad;
-    Node(Node *dad);
+    explicit Node(Node *dad);
 };
 
 bool compare(Node *first, Node *second);
@@ -28,7 +28,7 @@ bool compare(Node *first, Node *second);
 struct OpenFileException{
     enum type_e {Infile, Outfile} type;
     OpenFileException();
-    OpenFileException(type_e type);
+    explicit OpenFileException(type_e type);
 
 };
 

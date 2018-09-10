@@ -20,8 +20,8 @@ Node::Node(uint64_t weight, Node &left_son, Node &right_son) : weight(weight), l
                                                                right_son(&right_son) {}
 
 Node::~Node() {
-    if (left_son != nullptr) left_son->~Node();
-    if (right_son != nullptr) right_son->~Node();
+    if (left_son != nullptr) delete left_son;
+    if (right_son != nullptr) delete right_son;
 }
 
 Node::Node(Node *dad) : dad(dad) {
@@ -31,8 +31,8 @@ Node::Node(Node *dad) : dad(dad) {
 
 bool compare(Node *first, Node *second) { return first->weight < second->weight; }
 
-OpenFileException::OpenFileException() {}
+OpenFileException::OpenFileException() = default;
 
 OpenFileException::OpenFileException(OpenFileException::type_e type) : type(type){};
 
-DamagedFileException::DamagedFileException() {}
+DamagedFileException::DamagedFileException() = default;
