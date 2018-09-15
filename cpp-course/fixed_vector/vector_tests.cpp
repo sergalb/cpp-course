@@ -1,16 +1,14 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
 #include <doctest/doctest.h>
-#include <random>
 #include "fixed_vector.h"
 #include "base_vector.h"
 
 template<class T, size_t size>
 using test_vector = fixed_vector<T, size>;
 
-/*template<class T, size_t size>
-using test_vector = base::vector<T, size>;*/
-
+// template<class T, size_t size>
+// using test_vector = base::vector<T, size>;
 
 TEST_CASE("Empty vector") {
             SUBCASE("int") {
@@ -32,6 +30,13 @@ TEST_CASE("Empty vector") {
     }
 }
 
+TEST_CASE("Copy/assignment") {
+    test_vector<int, 10> v;
+
+            SUBCASE("Copy constructor(same size)") {
+        test_vector<int, 10> v2(v);
+    }
+}
 
 TEST_CASE("One value") {
             SUBCASE("int") {
@@ -82,7 +87,6 @@ TEST_CASE("insertion") {
     }
 }
 
-
 TEST_CASE("erasing") {
     const std::vector<std::string> strings({"0", "1"});
 
@@ -91,15 +95,18 @@ TEST_CASE("erasing") {
     v.push_back(strings[1]);
 
 
-
             SUBCASE("pop_back") {
         v.pop_back();
                 CHECK(v.front() == strings.front());
     }
 
-
             SUBCASE("erase") {
         v.erase(v.begin());
+                CHECK(v.front() == strings.back());
+    }
+
+            SUBCASE("const/erase") {
+        v.erase(static_cast<const test_vector<std::string, 2> &>(v).begin());
                 CHECK(v.front() == strings.back());
     }
 
@@ -142,7 +149,6 @@ TEST_CASE("iterators") {
     }
 }
 
-
 TEST_CASE("random tests") {
     constexpr uint32_t cnt_tests = 100'000;
     constexpr uint32_t cnt_values = 1000;
@@ -152,16 +158,48 @@ TEST_CASE("random tests") {
     test_vector<int, cnt_values> vector;
 
     for (size_t j = 0; j < cnt_values; ++j) {
-        values.push_back(rand() % cnt_values);
-        vector.push_back(rand() % cnt_values);
+        int value = static_cast<int>(rand() % cnt_values);
+        values.push_back(value);
+        vector.push_back(value);
     }
 
             SUBCASE("insert/erase") {
         for (size_t i = 0; i < cnt_erase; ++i) {
-            vector.erase(vector.begin() + (rand() % vector.size()));
-            values.erase(values.begin() + (rand() % values.size()));
+            decltype(values)::size_type id = rand() % vector.size();
+            vector.erase(vector.begin() + id);
+            values.erase(values.begin() + id);
+        }
+
+        for (size_t i = 0; i < cnt_erase; ++i) {
+            decltype(values)::size_type id = rand() % vector.size();
+            vector.erase(vector.begin() + id);
+            values.erase(values.begin() + id);
+        }
+
+                CHECK(std::equal(vector.begin(), vector.end(), values.begin()));
+    }
+
+            SUBCASE("erase/back") {
+        for (size_t i = 0; i < vector.size(); ++i) {
+            vector.erase((vector.begin() + vector.size()) - 1);
+            values.erase((values.begin() + values.size()) - 1);
+                    CHECK(vector.back() == values.back());
+        }
+    }
+
+            SUBCASE("pop_back/end() - 1") {
+        for (size_t i = 0; i < vector.size(); ++i) {
+            vector.pop_back();
+            values.pop_back();
+                    CHECK(*std::prev(vector.end()) == *std::prev(values.end()));
+        }
+    }
+
+            SUBCASE("erase(begin()/front()") {
+        for (size_t i = 0; i < vector.size(); ++i) {
+            vector.erase(vector.begin());
+            values.erase(values.begin());
+                    CHECK(vector.front() == values.front());
         }
     }
 }
-
-

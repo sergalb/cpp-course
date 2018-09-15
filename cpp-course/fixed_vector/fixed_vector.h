@@ -26,8 +26,8 @@ public:
     T const &operator[](size_t i) const;
     void push_back(T const &element);
     void pop_back();
-    iterator insert(iterator pos, T val);
-    iterator erase(iterator pos);
+    const_iterator insert(const_iterator pos, T const &val);
+    const_iterator erase(const_iterator pos);
     T &back();
     T const &back() const;
     T &front();
@@ -48,7 +48,7 @@ public:
     const_reverse_iterator rend() const;
 
 private:
-    void shift(iterator begin, iterator end, bool to_right);
+    void shift(const_iterator begin, const_iterator end, bool to_right);
 
 private:
     size_t _size;
@@ -127,21 +127,21 @@ void fixed_vector<T, N>::pop_back() {
 }
 
 template<typename T, size_t N>
-typename fixed_vector<T,N>::iterator fixed_vector<T, N>::insert(iterator pos, T val) {
+typename fixed_vector<T,N>::const_iterator fixed_vector<T, N>::insert(const_iterator pos, T const &val) {
     assert(_size < _capacity);
     if (pos == end()) {
         push_back(val);
         return pos;
     }
     shift(pos, end() + 1, true);
-    new(pos) T(std::forward<T>(val));
+    new(const_cast<T *>(pos)) T(std::forward<T const>(val));
     ++_size;
     return pos;
 
 }
 
 template<typename T, size_t N>
-typename fixed_vector<T,N>::iterator fixed_vector<T, N>::erase(iterator pos) {
+typename fixed_vector<T,N>::const_iterator fixed_vector<T, N>::erase(const_iterator pos) {
     assert(_size > 0);
     if (pos == end()) {
         pop_back();
@@ -214,13 +214,13 @@ size_t fixed_vector<T, N>::capacity() const {
 }
 
 template<typename T, size_t N>
-void fixed_vector<T, N>::shift(typename fixed_vector<T,N>::iterator begin, typename fixed_vector<T,N>::iterator end, bool to_right) {
+void fixed_vector<T, N>::shift(typename fixed_vector<T,N>::const_iterator begin, typename fixed_vector<T,N>::const_iterator end, bool to_right) {
     int direction = to_right ? 1 : -1;
-    for (typename fixed_vector<T,N>::iterator i = end; i != begin; i -= direction) {
+    for (typename fixed_vector<T,N>::const_iterator i = end; i != begin; i -= direction) {
         if(i != end) {
             (*i).~T();
         }
-        new(i) T(std::forward<T>(*(i - direction)));
+        new(const_cast<T *>(i)) T(std::forward<T const>(*(i - direction)));
     }
 }
 
