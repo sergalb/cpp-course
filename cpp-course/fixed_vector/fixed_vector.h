@@ -14,6 +14,10 @@
 template <typename T, size_t N>
 class fixed_vector {
 public:
+    using iterator = T *;
+    using const_iterator = T const *;
+    using reverse_iterator = std::reverse_iterator<iterator>;
+    using const_reverse_iterator = std::reverse_iterator<const_iterator>;
     fixed_vector() noexcept;
     fixed_vector(fixed_vector<T, N> const &other);
     fixed_vector& operator=(fixed_vector const &other);
@@ -22,8 +26,8 @@ public:
     T const &operator[](size_t i) const;
     void push_back(T const &element);
     void pop_back();
-    T * insert(size_t pos, T val);
-    T * erase(size_t pos);
+    iterator insert(iterator pos, T val);
+    iterator erase(iterator pos);
     T &back();
     T const &back() const;
     T &front();
@@ -32,13 +36,19 @@ public:
     size_t max_size();
     size_t size() const ;
     size_t capacity() const;
-    T * begin();
-    T const * begin() const ;
-    T * end();
-    T const * end() const;
+    bool empty() const;
+    void clear();
+    iterator begin();
+    const_iterator begin() const ;
+    iterator end();
+    const_iterator end() const;
+    reverse_iterator rbegin();
+    const_reverse_iterator rbegin() const ;
+    reverse_iterator rend();
+    const_reverse_iterator rend() const;
 
 private:
-    void shift(T *begin, T *end, bool to_right);
+    void shift(iterator begin, iterator end, bool to_right);
 
 private:
     size_t _size;
@@ -117,31 +127,30 @@ void fixed_vector<T, N>::pop_back() {
 }
 
 template<typename T, size_t N>
-T * fixed_vector<T, N>::insert(size_t pos, T val) {
+typename fixed_vector<T,N>::iterator fixed_vector<T, N>::insert(iterator pos, T val) {
     assert(_size < _capacity);
-    if (_size == pos) {
+    if (pos == end()) {
         push_back(val);
-        return reinterpret_cast<T*>(data + pos);
+        return pos;
     }
-    T check = *reinterpret_cast<T *>(data + pos);
-    shift(reinterpret_cast<T *>(data + pos), end() + 1, true);
-    new(reinterpret_cast<T*>(data + pos)) T(std::forward<T>(val));
+    shift(pos, end() + 1, true);
+    new(pos) T(std::forward<T>(val));
     ++_size;
-    return reinterpret_cast<T *>(data + pos);
+    return pos;
 
 }
 
 template<typename T, size_t N>
-T *fixed_vector<T, N>::erase(size_t pos) {
+typename fixed_vector<T,N>::iterator fixed_vector<T, N>::erase(iterator pos) {
     assert(_size > 0);
-    if (pos == _size - 1) {
+    if (pos == end()) {
         pop_back();
-        return reinterpret_cast<T*>(data + pos - 1);
+        return pos;
     }
-    reinterpret_cast<T *>(data + pos)->~T();
-    shift(end(), reinterpret_cast<T *>(data + pos), false);
+    pos->~T();
+    shift(end() - 1, pos, false);
     --_size;
-    return reinterpret_cast<T *>(data + pos);
+    return pos;
 }
 
 template<typename T, size_t N>
@@ -150,23 +159,43 @@ void fixed_vector<T, N>::swap(fixed_vector<T, N> &other) {
 }
 
 template<typename T, size_t N>
-T* fixed_vector<T, N>::begin() {
+typename fixed_vector<T,N>::iterator  fixed_vector<T, N>::begin() {
     return reinterpret_cast<T *>(data);
 }
 
 template<typename T, size_t N>
-T const* fixed_vector<T, N>::begin() const {
-    return reinterpret_cast<T const*>(data);
+typename fixed_vector<T,N>::const_iterator fixed_vector<T, N>::begin() const {
+    return reinterpret_cast<T const *>(data);
 }
 
 template <typename T, size_t N>
-T* fixed_vector<T, N>::end() {
+typename fixed_vector<T,N>::iterator fixed_vector<T, N>::end() {
     return reinterpret_cast<T *>(data + _size);
 }
 
 template <typename T, size_t N>
-T const * fixed_vector<T, N>::end() const{
+typename fixed_vector<T,N>::const_iterator fixed_vector<T, N>::end() const{
     return reinterpret_cast<T const *>(data + _size);
+}
+
+template<typename T, size_t N>
+typename fixed_vector<T,N>::reverse_iterator  fixed_vector<T, N>::rbegin() {
+    return reverse_iterator(end());
+}
+
+template<typename T, size_t N>
+typename fixed_vector<T,N>::const_reverse_iterator  fixed_vector<T, N>::rbegin() const {
+    return const_reverse_iterator(end());
+}
+
+template <typename T, size_t N>
+typename fixed_vector<T,N>::reverse_iterator fixed_vector<T, N>::rend() {
+    return reverse_iterator(begin());
+}
+
+template <typename T, size_t N>
+typename fixed_vector<T,N>::const_reverse_iterator fixed_vector<T, N>::rend() const{
+    return const_reverse_iterator(begin());
 }
 
 template<typename T, size_t N>
@@ -185,13 +214,25 @@ size_t fixed_vector<T, N>::capacity() const {
 }
 
 template<typename T, size_t N>
-void fixed_vector<T, N>::shift(T *begin, T *end, bool to_right) {
+void fixed_vector<T, N>::shift(typename fixed_vector<T,N>::iterator begin, typename fixed_vector<T,N>::iterator end, bool to_right) {
     int direction = to_right ? 1 : -1;
-    for (T * i = end; i != begin; i -= direction) {
+    for (typename fixed_vector<T,N>::iterator i = end; i != begin; i -= direction) {
         if(i != end) {
             (*i).~T();
         }
         new(i) T(std::forward<T>(*(i - direction)));
+    }
+}
+
+template<typename T, size_t N>
+bool fixed_vector<T, N>::empty() const {
+    return _size == 0;
+}
+
+template<typename T, size_t N>
+void fixed_vector<T, N>::clear() {
+    while(!empty()) {
+        pop_back();
     }
 }
 
